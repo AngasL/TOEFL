@@ -4,7 +4,7 @@ using System.Data.Entity;
 using System.Text;
 using TOEFL.Repository.Models;
 
-namespace TOEFL.Repository
+namespace TOEFL.Repositories
 {
     public class TOFELDBContext : DbContext
     {
