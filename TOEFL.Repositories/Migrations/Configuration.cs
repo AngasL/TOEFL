@@ -5,14 +5,14 @@ namespace TOEFL.Repositories.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<TOEFL.Repository.TOFELDBContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<TOFELDBContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(TOEFL.Repository.TOFELDBContext context)
+        protected override void Seed(TOFELDBContext context)
         {
             //  This method will be called after migrating to the latest version.
 

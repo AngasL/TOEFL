@@ -11,6 +11,7 @@ namespace TOEFL.Web.App_Start
     using Ninject;
     using Ninject.Web.Common;
     using TOEFL.Repositories;
+    using TOEFL.Repository.Models;
     using TOEFL.Services;
 
     public static class NinjectWebCommon 
@@ -64,7 +65,7 @@ namespace TOEFL.Web.App_Start
         private static void RegisterServices(IKernel kernel)
         {
             kernel.Bind<IArticleService>().To<ArticleService>();
-            kernel.Bind<IArticleRepository>().To<ArticleRepository>();
+            kernel.Bind<IRepository<Article>>().To<ArticleRepository>();
         }        
     }
 }

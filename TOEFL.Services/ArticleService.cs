@@ -1,13 +1,14 @@
 ﻿using System;
 using TOEFL.Repositories;
+using TOEFL.Repository.Models;
 
 namespace TOEFL.Services
 {
     public class ArticleService: IArticleService
     {
-        private readonly IArticleRepository _articleRepository;
+        private readonly IRepository<Article> _articleRepository;
 
-        public ArticleService(IArticleRepository articleRepository)
+        public ArticleService(IRepository<Article> articleRepository)
         {
             this._articleRepository = articleRepository;
         }

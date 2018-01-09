@@ -48,7 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArticleRepositoy.cs" />
-    <Compile Include="IArticleRepositoy.cs" />
+    <Compile Include="IRepository.cs" />
     <Compile Include="Migrations\201801080705077_init.cs" />
     <Compile Include="Migrations\201801080705077_init.Designer.cs">
       <DependentUpon>201801080705077_init.cs</DependentUpon>
